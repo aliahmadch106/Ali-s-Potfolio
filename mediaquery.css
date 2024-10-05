@@ -1,0 +1,101 @@
+:root {
+    --text-black: #000000;
+    --text-white: #ffffff;
+    --primary-color: #00ffe5;
+    --body-backcolor: #222;
+    --border-color: #525252;
+    --shadow-color: #000000;
+    --body-color: #6d6d6d;
+    --nav-color: #FFFFFF;
+    --whitebtn-color: #ffffff;
+    --iconmnu-color: #000000;
+    --blackbtn-color: #000000;
+    --social-icons: #000000;
+    --mainpage-color: linear-gradient(to left bottom, #a78fff, #FFFFFF, #a78fff);
+}
+.lightmode {
+    --text-black: #000000;
+    --text-white: #ffffff;
+    --primary-color: #ff00b3;
+    --body-backcolor: #222;
+    --border-color: #525252;
+    --shadow-color: #6d6d6d;
+    --body-color: #6d6d6d;
+    --nav-color: #FFFFFF;
+    --progress-color: #00ff15;
+    --pro-empty: #00000000;
+    --whitebtn-color: #ffffff;
+    --iconmnu-color: #000000;
+    --blackbtn-color: #000000;
+    --social-icons: #000000;
+}
+@media(max-width:768px)
+{
+    .downloadBtn{
+        text-decoration: none; padding: 10px 15px;
+        border-radius: 10px; border: 2px solid var(--primary-color);
+        box-shadow: 0 0 10px var(--text-black);
+        transition: 0.5s;
+        &:hover{
+            /* border-color: var(--text-white); */
+            border-radius: 20px;
+            box-shadow: 0 0 15px 3px var(--primary-color);
+        }
+    }
+    .contactBtn{
+        text-decoration: none; padding: 10px 15px;
+        border-radius: 10px; border: 2px solid var(--text-white);
+        margin-left: 15px;
+        box-shadow: 0 0 10px var(--text-black);
+        transition: 0.5s;
+        &:hover{
+            /* border-color: var(--primary-color); */
+            border-radius: 20px;
+            box-shadow: 0 0 15px 3px var(--text-white);
+        }
+    }
+    .imageContainer{
+        width: 100%;
+    }
+    .mainIntro{
+        width: 100%;
+    }
+    #home{
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+        .togglebtn{
+            position: fixed;
+            top: 15px; right: 15px;
+            z-index: 10;
+        }
+    .togglebtn{
+        display: flex;
+    }
+    .logoOuter{
+        display: none;
+    }
+    nav{
+        position: fixed;
+        height: 100vh;
+        width: 50vw; right: 0;
+        background-color: var(--body-backcolor);
+        margin-right: -50vw;
+        z-index: 9;
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        a{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+/* @media(min-width:768px){
+    .mainIntro{
+        width: 50vw;
+    }
+} */

@@ -1,0 +1,139 @@
+:root {
+    --text-black: #000000;
+    --text-white: #ffffff;
+    --primary-color: #00ffe5;
+    --body-backcolor: #222;
+    --border-color: #525252;
+    --shadow-color: #6d6d6d;
+    --body-color: #6d6d6d;
+    --nav-color: #FFFFFF;
+    --whitebtn-color: #ffffff;
+    --iconmnu-color: #000000;
+    --blackbtn-color: #000000;
+    --social-icons: #000000;
+}
+.lightmode {
+    --text-black: #000000;
+    --text-white: #ffffff;
+    --primary-color: #ff00b3;
+    --body-backcolor: #222;
+    --border-color: #525252;
+    --shadow-color: #6d6d6d;
+    --body-color: #6d6d6d;
+    --nav-color: #FFFFFF;
+    --progress-color: #00ff15;
+    --pro-empty: #00000000;
+    --whitebtn-color: #ffffff;
+    --iconmnu-color: #000000;
+    --blackbtn-color: #000000;
+    --social-icons: #000000;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1500px) {
+
+    .downloadBtn{
+        text-decoration: none; padding: 10px 15px;
+        border-radius: 10px; border: 2px solid var(--primary-color);
+        box-shadow: 0 0 10px var(--text-black);
+        transition: 0.5s;
+        &:hover{
+            /* border-color: var(--text-white); */
+            border-radius: 20px;
+            box-shadow: 0 0 15px 3px var(--primary-color);
+        }
+    }
+    .contactBtn{
+        text-decoration: none; padding: 10px 15px;
+        border-radius: 10px; border: 2px solid var(--text-white);
+        margin-left: 15px;
+        box-shadow: 0 0 10px var(--text-black);
+        transition: 0.5s;
+        &:hover{
+            /* border-color: var(--primary-color); */
+            border-radius: 20px;
+            box-shadow: 0 0 15px 3px var(--text-white);
+        }
+    }
+
+    #home{
+        padding: 0 20px;
+        gap: 5vh;
+    }
+    section{
+        padding-top: 14vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .imageContainer{
+        width: 50vw;
+        aspect-ratio: 1/1;
+    }
+    .mainIntro{
+        width: 50vw;
+        height: max-content;
+    }
+    
+nav{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: last baseline;
+    justify-content: end;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    /* background: var(--body-backcolor); */
+    .logoOuter{
+        height: 30px;
+        width: max-content;
+        position: fixed; left: 20px; top: 20px;
+        font-size: 1.5rem;
+        span{
+            color: var(--primary-color);
+            font-size: 1.3em;
+        }
+    }
+    a{
+        color: var(--text-white);
+        text-decoration: none;
+        font-size: 1rem;
+        margin-right: 4vw;
+        &:hover{
+            color: var(--primary-color);
+        }
+    }
+}
+
+@keyframes navshow {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.skillContainer{
+    flex-direction: row;
+    .tecnicalSkill{
+            width: 45%;
+    }
+    .persolanSkill{
+            width: 45%;
+    }
+}
+.skillsBoxs{
+    width: 185px;
+}
+.outerContactContact{
+    width: 100vw;
+    flex-direction: row;
+    gap: 15vh;
+}
+.contactContainer{
+    width: 40%;
+}
+.contactForm{
+    form{
+        width: 30vw;
+    }
+}
+#skill, #project, #contact, #resume{
+    padding-top: 15vh;
+}
+}

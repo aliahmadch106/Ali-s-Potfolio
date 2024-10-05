@@ -1,0 +1,164 @@
+:root {
+    --text-black: #000000;
+    --text-white: #ffffff;
+    --primary-color: #00ffe5;
+    --body-backcolor: #222;
+    --border-color: #525252;
+    --shadow-color: #6d6d6d;
+    --body-color: #6d6d6d;
+    --nav-color: #FFFFFF;
+    --whitebtn-color: #ffffff;
+    --iconmnu-color: #000000;
+    --blackbtn-color: #000000;
+    --social-icons: #000000;
+}
+.lightmode {
+    --text-black: #000000;
+    --text-white: #ffffff;
+    --primary-color: #ff00b3;
+    --body-backcolor: #222;
+    --border-color: #525252;
+    --shadow-color: #6d6d6d;
+    --body-color: #6d6d6d;
+    --nav-color: #FFFFFF;
+    --progress-color: #00ff15;
+    --pro-empty: #00000000;
+    --whitebtn-color: #ffffff;
+    --iconmnu-color: #000000;
+    --blackbtn-color: #000000;
+    --social-icons: #000000;
+}
+@media only screen and (max-width: 768px) {
+    .downloadBtn{
+        text-decoration: none; padding: 10px 15px;
+        border-radius: 10px; border: 2px solid var(--primary-color);
+        box-shadow: 0 0 10px var(--text-black);
+        transition: 0.5s;
+        &:hover{
+            /* border-color: var(--text-white); */
+            border-radius: 20px;
+            box-shadow: 0 0 15px 3px var(--primary-color);
+        }
+    }
+    .contactBtn{
+        text-decoration: none; padding: 10px 15px;
+        border-radius: 10px; border: 2px solid var(--text-white);
+        margin-left: 15px;
+        box-shadow: 0 0 10px var(--text-black);
+        transition: 0.5s;
+        &:hover{
+            /* border-color: var(--primary-color); */
+            border-radius: 20px;
+            box-shadow: 0 0 15px 3px var(--text-white);
+        }
+    }
+
+    #home{
+        gap: 5vh;
+        flex-direction: column;
+        /* overflow-x: hidden; */
+    }
+    .imageContainer{
+        width: 100vw;
+        /* aspect-ratio: 8/8; */
+    }
+    .mainIntro{
+        width: 90vw;
+        height: max-content;
+    }
+    .togglebtn{
+        display: flex;
+        position: fixed;
+        top: 15px; right: 15px;
+        z-index: 10;
+    }
+nav{
+    height: 100vh;
+    background: var(--body-backcolor);
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.5s;
+    z-index: 10;
+    margin-right: -50vw;
+    position: fixed; right: 0; top: 0;
+    .logoOuter{
+        display: none;
+    }
+    a{
+        color: var(--text-white);
+        text-decoration: none;
+        font-size: 5vw;
+        margin-right: 3vw;
+        &:hover{
+            color: var(--primary-color);
+        }
+    }
+}
+.skillContainer{
+    flex-direction: column;
+    .tecnicalSkill{
+        width: 95%;
+}
+.persolanSkill{
+        width: 95%;
+}
+.skillsBoxs{
+    width: 120px;
+}
+}
+section{
+    margin-top: 13vh;
+}
+.projectBoxs {
+    width: 90%;
+    margin: 10px 0;
+  }
+  @media only screen and (orientation: landscape) {
+    .projectBoxs {
+        width: 45%;
+    }
+    #home{
+        padding-top: 40vh;
+    }
+.mainImage{
+    img{
+        height: 100%;
+        transition: 0.5s;
+    }
+}
+  }
+  
+.outerContactContact{
+    width: 100vw;
+    flex-direction: column;
+    padding-bottom: 10vh;
+}
+.contactContainer{
+    width: 90%;
+    padding: 10vh 0vh;
+}
+.contactForm{
+    width: 80vw;
+    form{
+        width: 100%;
+    }
+}
+#resume{
+    .resumeContainer{
+        img{
+            height: 100vh;
+            width: 100vw;
+        }
+        
+    }
+  }
+  #skill, #project, #contact, #resume{
+    padding-top: 10vh;
+}
+.projectContainer {
+    gap: 5vh;
+  }
+}
